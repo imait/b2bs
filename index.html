@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Demo</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<style type="text/css">
+body {font-family: serif;}
+h1 {font-size: large;}
+h2 {font-size: 100%; margin: 0; padding: 0.5em 4px; background: #FFFFCC;}
+
+p {margin-left: 1em; line-height: 2em;}
+
+#TEXT_AREA { border: gray solid 2px; width: 75%; float: left;}
+#ITEMS {width: 20%; float: right;}
+#ITEMS h2 {font-size: 100%; margin: 0; padding: 0.5em 4px; background: #FFFFCC;}
+#CATS_LIST {margin: 0; padding: 0; list-style: none;}
+#CATS_LIST li {margin: 0; padding: 4px 4px 4px 1em;}
+
+</style>
+
+<script type="text/javascript" src="./lib/b2bs.js"></script>
+</head>
+
+<body onload="">
+<h1>Demo</h1>
+
+
+
+<div id="TEXT_AREA"></div>
+
+<div id="ITEMS">
+<h2>所持品</h2>
+<ul id="CATS_LIST">
+</ul>
+</div>
+
+<script>
+
+var cond = new Conditions()
+
+reset_catalysts_list(cond)
+
+var em = new EventManager(cond, 'ev001');
+
+
+</script>
+
+
+</body>
+</html>
