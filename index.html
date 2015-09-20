@@ -15,10 +15,13 @@ h2 {font-size: 100%; margin: 0; padding: 0.5em 4px; background: #FFFFCC;}
 p {margin-left: 1em; line-height: 2em;}
 
 #TEXT_AREA { border: gray solid 2px; width: 75%; float: left;}
-#ITEMS {width: 20%; float: right;}
+#STATUS {width: 20%; float: right;}
 #ITEMS h2 {font-size: 100%; margin: 0; padding: 0.5em 4px; background: #FFFFCC;}
 #CATS_LIST {margin: 0; padding: 0; list-style: none;}
 #CATS_LIST li {margin: 0; padding: 4px 4px 4px 1em;}
+
+#CHAR_LIST {margin: 0; padding-left: 2em;}
+#CHAR_LIST li {margin: 0; padding: 0;}
 
 </style>
 
@@ -32,10 +35,18 @@ p {margin-left: 1em; line-height: 2em;}
 
 <div id="TEXT_AREA"></div>
 
+<div id="STATUS">
 <div id="ITEMS">
 <h2>所持品</h2>
 <ul id="CATS_LIST">
 </ul>
+</div>
+
+<div id="CHAR">
+<h2>人物</h2>
+<ol id="CHAR_LIST">
+</ol>
+</div>
 </div>
 
 <script>
@@ -45,6 +56,9 @@ var cond = new Conditions()
 reset_catalysts_list(cond)
 
 var em = new EventManager(cond, 'ev001');
+
+var env = new Environs();
+env.loadCharacters();
 
 
 </script>
