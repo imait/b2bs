@@ -33,23 +33,23 @@ p {margin-left: 1em; line-height: 2em;}
 
 
 
-<div id="TEXT_AREA"></div>
+ <div id="TEXT_AREA"></div>
 
-<div id="STATUS">
-<div id="ITEMS">
-<h2>所持品</h2>
-<ul id="CATS_LIST">
-</ul>
-</div>
+ <div id="STATUS">
+ <div id="ITEMS">
+ <h2>所持品</h2>
+ <ul id="CATS_LIST">
+ </ul>
+ </div>
 
-<div id="CHAR">
-<h2>人物</h2>
-<ol id="CHAR_LIST">
-</ol>
-</div>
-</div>
+ <div id="CHAR">
+ <h2>人物</h2>
+ <ol id="CHAR_LIST">
+ </ol>
+ </div>
+ </div>
 
-<script>
+ <script>
 
 var language_set = 'jp';
 
@@ -64,10 +64,11 @@ var cond = new Conditions()
 
 reset_catalysts_list(cond)
 
-var em = new EventManager(cond, 'ev001');
 
 var env = new Environs();
 env.loadCharacters();
+
+var em = new EventManager(cond, env, 'ev001');
 
 
 </script>
