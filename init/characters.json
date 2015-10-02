@@ -1,3 +1,4 @@
+// -*- coding: utf-8-unix; mode: javascript -*-
 {
     '00': {'name': '菜桜子',
 	   'family_name': '高槻',
@@ -58,7 +59,7 @@
 	   'luck': 12,
 	   'love': {'01': {'love': 10,
 			   'hate': 0},
-		    '02': {'love': 8,
+		    '02': {'love': 5,
 			   'hate': 2},
 		    '03': {'love': 7,
 			   'hate': 1},
