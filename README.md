@@ -1,6 +1,6 @@
 # b2bs
 
-## about event fil
+## about event file
 
 * attribute
 * *keyword*
